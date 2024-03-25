@@ -11,7 +11,7 @@ const Page = () => {
             <h1 className='text-red-600 text-xl font-bold uppercase'>Ward no: 15 service portal</h1>
         </div>
        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/1200px-Flag_of_Nepal.svg.png" alt="Map_of_Nepal" className='h-20' />
+        <img src="https://dotm.gov.np/content/img/flag.gif" alt="Map_of_Nepal" className='h-20' />
         </nav>
     </>
   )

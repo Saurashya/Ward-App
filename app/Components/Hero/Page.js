@@ -1,7 +1,7 @@
 import React from 'react';
 //import Map from "./Map.png";
 
-const Page = () => {
+const page = () => {
   return (
     <div className='flex justify-around items-center h-custom bg-gray-100'>
       <img src="https://t4.ftcdn.net/jpg/00/25/48/51/360_F_25485177_imSqBKANu9bsW2FSUhmidcmlxu4SJxWs.jpg" className='w-custom p-2'/>
@@ -23,4 +23,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
