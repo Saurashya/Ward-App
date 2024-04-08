@@ -2,24 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* Or, if the font files are in your local directory */
+@font-face {
+  font-family: "Inter";
+  src: url("/path/to/Inter-Regular.woff2") format("woff2"),
+    url("/path/to/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
-}
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.marquee {
-  animation: marquee 10s linear infinite;
-  white-space: nowrap;
-  display: inline-block;
+  font-family: "Inter", sans-serif;
 }
 .w-custom {
   width: 800px;
@@ -27,4 +26,16 @@ body {
 }
 .h-custom {
   height: 26rem;
+}
+.box {
+  position: relative;
+  z-index: 9;
+}
+.coat-of-arms {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+  opacity: 0.3;
+  transform: translateX(150px) translateY(100px);
 }
