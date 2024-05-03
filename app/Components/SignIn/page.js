@@ -1,10 +1,11 @@
 "use client"
-import React, { useState } from 'react'
-import Link from 'next/link'
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Page = () => {
     const [formData, setFormData] = useState({});
     const [success, setSuccess] = useState(false);
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -25,7 +26,10 @@ const Page = () => {
         console.log(data);
         if (res.ok) {
             setSuccess(true);
-            setislogged(true);
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 2000);
+            
         }
     };
     return (
@@ -45,5 +49,7 @@ const Page = () => {
                 <Link href='/Components/SignUp'><span className='text-blue-500'>Sign Up</span></Link>
             </div>
         </div>
-    )
-}
+    );
+};
+
+export default Page;
