@@ -10,12 +10,7 @@ const page = () => {
     </div>
     <div className="stack2">
     <h1 className='text-xl font-semibold'> Events</h1>
-        <ul>
-            <li>Computer Skills workshop</li>
-            <li>Soap Making workshop</li>
-            <li>Healthy Cooking workshop</li>
-            <li>Mental health Management workshop</li>
-        </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eaque.</p>
     </div>
     <div className="stack3">
     <h1 className='text-xl font-semibold'> About Us</h1>

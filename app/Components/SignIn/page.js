@@ -5,7 +5,6 @@ import Link from 'next/link'
 const Page = () => {
     const [formData, setFormData] = useState({});
     const [success, setSuccess] = useState(false);
-
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -26,9 +25,9 @@ const Page = () => {
         console.log(data);
         if (res.ok) {
             setSuccess(true);
+            setislogged(true);
         }
     };
-
     return (
         <div className="container mx-auto max-w-md p-8 border border-gray-300 rounded-lg shadow-lg my-12">
             <h1 className='text-3xl text-center font-semibold my-7'>Sign In</h1>
@@ -40,6 +39,7 @@ const Page = () => {
             {success && (
                 <p className="text-green-500 text-center mt-4">Login successful! Welcome back.</p>
             )}
+            
             <div className="flex items-center justify-center mt-5">
                 <p className="mr-2">Don't have an account?</p>
                 <Link href='/Components/SignUp'><span className='text-blue-500'>Sign Up</span></Link>
@@ -47,5 +47,3 @@ const Page = () => {
         </div>
     )
 }
-
-export default Page;
